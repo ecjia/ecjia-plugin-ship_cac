@@ -77,6 +77,11 @@ class plugin_ship_cac {
 
 }
 
+Ecjia_PluginManager::extend('ship_cac', function() {
+    require_once RC_Plugin::plugin_dir_path(__FILE__) . 'ship_cac.class.php';
+    return new ship_cac();
+});
+
 RC_Plugin::register_activation_hook(__FILE__, array('plugin_ship_cac', 'install'));
 RC_Plugin::register_deactivation_hook(__FILE__, array('plugin_ship_cac', 'uninstall'));
 RC_Hook::add_filter('shipping_factory_adapter_instance', array( 'plugin_ship_cac', 'adapter_instance' ), 10, 2);
