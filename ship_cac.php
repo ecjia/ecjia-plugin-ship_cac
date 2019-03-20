@@ -49,7 +49,7 @@ Plugin Name: 上门取货
 Plugin URI: http://www.ecjia.com/plugins/ecjia.ship_cac/
 Description: 买家自己到商家指定地点取货
 Author: ECJIA TEAM
-Version: 2.0.0
+Version: 2.30.0
 Author URI: http://www.ecjia.com/
 Plugin App: shipping
 Text Domain: ship_cac
